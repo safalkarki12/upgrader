@@ -357,7 +357,7 @@ class UpgraderMessages {
         break;
       case 'en':
       default:
-        message = 'IGNORE';
+        message = 'Ignore';
         break;
     }
     return message;
@@ -473,7 +473,7 @@ class UpgraderMessages {
         break;
       case 'en':
       default:
-        message = 'LATER';
+        message = 'Remind Me Later';
         break;
     }
     return message;
@@ -586,7 +586,7 @@ class UpgraderMessages {
         break;
       case 'en':
       default:
-        message = 'UPDATE NOW';
+        message = 'Download';
         break;
     }
     return message;
@@ -884,7 +884,7 @@ class UpgraderMessages {
         break;
       case 'en':
       default:
-        message = 'Update App?';
+        message = 'New version Available?';
         break;
     }
     return message;

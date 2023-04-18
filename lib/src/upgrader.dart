@@ -705,21 +705,21 @@ class Upgrader {
         ],
       ),
       actions: <Widget>[
-        if (showIgnore)
-          CupertinoDialogAction(
-              textStyle: cupertinoButtonTextStyle,
-              child: Text(messages.message(UpgraderMessage.buttonTitleIgnore)!),
-              onPressed: () => onUserIgnored(context, true)),
-        if (showLater)
-          CupertinoDialogAction(
-              textStyle: cupertinoButtonTextStyle,
-              child: Text(messages.message(UpgraderMessage.buttonTitleLater)!),
-              onPressed: () => onUserLater(context, true)),
         CupertinoDialogAction(
             textStyle: cupertinoButtonTextStyle,
             isDefaultAction: true,
             child: Text(messages.message(UpgraderMessage.buttonTitleUpdate)!),
             onPressed: () => onUserUpdated(context, !blocked())),
+        if (showLater)
+          CupertinoDialogAction(
+              textStyle: cupertinoButtonTextStyle,
+              child: Text(messages.message(UpgraderMessage.buttonTitleLater)!),
+              onPressed: () => onUserLater(context, true)),
+        if (showIgnore)
+          CupertinoDialogAction(
+              textStyle: cupertinoButtonTextStyle,
+              child: Text(messages.message(UpgraderMessage.buttonTitleIgnore)!),
+              onPressed: () => onUserIgnored(context, true)),
       ],
     );
   }
